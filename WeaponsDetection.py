@@ -240,32 +240,9 @@ def create_test_data():
     return testing_data
 
 
-
-'''if (os.path.exists('train_data.npy')):
-
-    train_data =np.load('train_data.npy',allow_pickle=True)
-
-    #train_data = create_test_data()
-
-else: # If dataset is not created:'''
-
-train_data = create_train_data()
-
-'''if (os.path.exists('test_data.npy')):
-
-    test_data =np.load('test_data.npy',allow_pickle=True)
-
-else:'''
-
-test_data = create_test_data()
-
-
-
 if (os.path.exists('train_data.npy')):
 
     train_data =np.load('train_data.npy')
-
-    #train_data = create_test_data()
 
 else: # If dataset is not created:
 
